@@ -1,0 +1,557 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --maincolor: #0e0e0e;
+    --secondarycolor: #ca9e5d;
+    --section-padding: 50px;
+    --section-background: #111214;
+    scroll-behavior: smooth;
+}
+
+
+.special-heading {
+    text-align: center;
+    color: var(--secondarycolor);
+
+
+}
+
+.h3 {
+    text-align: center;
+    color: #fff;
+    margin-top: 5px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.p {
+    text-align: center;
+    color: #777;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+
+h2 {
+    margin: 0;
+    position: relative;
+}
+
+
+.header {
+    background-color: var(--maincolor);
+    height: 100vh;
+}
+
+.container {
+    /* background-color: #0e0e0e; */
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    padding-left: var(--section-padding);
+    padding-right: var(--section-padding);
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+.header .container .lgs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    margin-bottom: 100px;
+
+}
+
+.header .container .lgs .logo {
+    color: #fff;
+    width: 40%;
+}
+
+.header .container .lgs ul {
+    list-style: none;
+    color: #fff;
+}
+
+.header .container .lgs .icon1 {
+    width: 50px;
+}
+
+.header .container .lgs ul li {
+    display: inline-block;
+    margin-left: 35px;
+}
+
+.header .container .lgs span {
+    position: relative;
+}
+
+.header .container .lgs i {
+    margin-left: 4px;
+}
+
+.container .lgs span::before {
+    content: "";
+    position: absolute;
+    height: 18px;
+    width: 2px;
+    background-color: #fff;
+    left: -13px;
+    top: 1px;
+}
+
+.header .container .lgs i {
+    color: #fff;
+    font-size: 15px;
+
+}
+
+.header h2::after,
+.header h1::after {
+    content: ".";
+    position: absolute;
+    color: var(--secondarycolor);
+
+}
+
+
+/* start content of header */
+
+.header .contint1 {
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* gap: 20px; */
+}
+
+.header .contint1 img {
+    width: 95%;
+    z-index: 2;
+}
+
+.header .contint1 .image {
+    position: relative;
+    z-index: 2;
+}
+
+.header .contint1 .image::after {
+    content: "";
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    background-color: #292c339e;
+    left: 28px;
+    top: 0;
+    z-index: -1;
+}
+
+.header .col1 h1 {
+    font-size: 50px;
+    margin-top: -15px;
+    position: relative;
+}
+
+
+.header .col1 h1::before {
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: var(--secondarycolor);
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+
+}
+
+.header .col1 p {
+    margin-top: 7px;
+}
+
+.header .col1 button {
+    cursor: pointer;
+    border: 1px solid var(--secondarycolor);
+    outline: 0;
+    margin-top: 40px;
+    padding: 11px;
+    background-color: var(--maincolor);
+    color: var(--secondarycolor);
+}
+
+.header .col3 {
+    margin: 10px 9px;
+    line-height: 30px;
+    position: relative;
+}
+
+.header .col3 .arrow {
+    color: var(--secondarycolor);
+}
+
+.header .col3 .arrow-2 {
+    color: #777;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 35px;
+    right: 0;
+}
+
+
+.header .col3 .text {
+    color: var(--secondarycolor);
+    margin-bottom: 5px;
+}
+
+/* strat services */
+.services {
+    background-color: var(--section-background);
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+
+}
+
+.services .services-content {
+
+    padding-top: var(--section-padding);
+    padding-bottom: 150px;
+}
+
+.services .services-content .row1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.services .services-content .row1 .card {
+    color: #fff;
+    width: 189px;
+    /* height: 151px; */
+    background-color: var(--maincolor);
+    text-align: center;
+    /* padding-top: 40px; */
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+}
+
+.services .services-content .row1 .card i {
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.services .services-content .row1 .card h4 {
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.services .services-content .row1 .card p {
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.services .services-content .row2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.services .services-content .row2 .card {
+    text-align: center;
+    width: 189px;
+    margin-top: 30px;
+
+}
+
+.services .services-content .row2 .card h4 {
+    font-weight: 500;
+    color: var(--secondarycolor);
+}
+
+.services .services-content .row2 .card p {
+    margin-top: 6px;
+    color: #777;
+}
+
+/* end services */
+/* strat portfolio */
+.porfolio {
+    background-color: var(--maincolor);
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+
+.porfolio .all-cont {
+    display: flex;
+    JUSTIFY-CONTENT: center;
+    align-items: center;
+    margin-top: 15px;
+    color: #777;
+    font-size: 12px;
+    margin-bottom: -45px;
+}
+
+.porfolio .all-cont div {
+    margin-left: 20px;
+    margin-bottom: 100px;
+    cursor: pointer;
+}
+
+.porfolio .all-cont div:first-child {
+    color: var(--secondarycolor);
+    position: relative;
+
+}
+
+.porfolio .all-cont div:first-child::before {
+    width: 36px;
+    content: "";
+    height: 2px;
+    position: absolute;
+    left: -11px;
+    bottom: -11px;
+    background-color: var(--secondarycolor);
+}
+
+
+.porfolio .portfolio-content img {
+    width: 100%;
+    height: 100%;
+}
+
+.porfolio .portfolio-content {
+    display: grid;
+    grid-template-columns: 150px 1fr 1fr 150px;
+    grid-template-rows: repeat(4, 75px);
+    width: 100%;
+    gap: 20px;
+    padding-bottom: 30px
+}
+
+.porfolio .portfolio-content .mg1 {
+    grid-column: 1 / 1;
+    grid-row: 1 / 3;
+}
+
+.porfolio .portfolio-content .mg2 {
+    grid-column: 1 / 1;
+    grid-row: 3 / 5;
+}
+
+.porfolio .portfolio-content .mg3 {
+    grid-column: 2 / 4;
+    grid-row: 1 / 5;
+}
+
+.porfolio .portfolio-content .mg4 {
+    grid-column: span 1;
+    grid-row: 1 / 5;
+}
+
+/* end portfolio */
+/* Start articles */
+.articels {
+    background-color: var(--section-background);
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+
+.articels .articels-content .card img {
+    max-width: 100%;
+}
+
+.articels .articels-content .card {
+    background-color: var(--maincolor);
+    position: relative;
+}
+
+.articels .articels-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: repeat(3, 100px); */
+    gap: 15px;
+    padding-top: var(--section-padding);
+    color: #fff;
+}
+
+.articels .articels-content .card-1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+}
+
+.articels .articels-content .card-2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+}
+
+.articels .articels-content .card-3 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+
+}
+
+.articels .articels-content .card-4 {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+.articels .articels-content .card-5 {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+}
+
+.articels .articels-content .card-3,
+.articels .articels-content .card-4,
+.articels .articels-content .card-5 {
+    display: flex;
+    font-size: 12px;
+    margin-left: 5px;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+
+}
+
+.articels .articels-content .card-3 img,
+.articels .articels-content .card-4 img,
+.articels .articels-content .card-5 img {
+    width: 50%;
+    height: 100%;
+}
+
+.articels .articels-content .card .div {
+    margin-left: 5px;
+}
+
+.articels .articels-content .card .pad {
+    padding: 10px 10px 0;
+}
+
+.articels .articels-content .card .h4 {
+    color: var(--secondarycolor);
+}
+
+.articels .articels-content .card p {
+    color: #777;
+    margin-bottom: 5px;
+    font-size: small;
+    line-height: 19px;
+}
+
+.articels .articels-content .card span {
+    color: var(--secondarycolor);
+    display: block;
+    padding: 10px 10px 20px;
+    font-size: 12px;
+}
+
+.articels .articels-content .card .h4-2 {
+    color: #a29f9fdb;
+}
+
+
+.articels .articels-content .card::before {
+    content: "08 Apr 2019";
+    position: absolute;
+    width: 65px;
+    top: 0;
+    left: 0;
+    padding: 5px;
+    color: var(--secondarycolor);
+    background-color: black;
+    font-size: 12px;
+}
+
+/* start contact us  */
+.contactus {
+    background-color: var(--maincolor);
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    position: relative;
+    border-bottom: 1px solid var(--secondarycolor);
+}
+
+.contactus .contact-content {
+    padding-top: var(--section-padding);
+    display: flex;
+    width: 91%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contactus .contact-content .contact {
+    width: 200px;
+    background-color: var(--section-background);
+    margin-left: 15px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.contactus .contact-content .contact i {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.contactus .contact-content .contact a {
+    text-decoration: none;
+    color: var(--secondarycolor);
+}
+
+.contactus .link {
+    font-size: 30px;
+    color: #fff;
+    margin: 40px auto;
+    text-decoration: none;
+    width: fit-content;
+    display: block;
+}
+
+.contactus .top {
+    position: absolute;
+    right: 40px;
+    bottom: 39px;
+    padding: 20px;
+    background-color: var(--section-background);
+    border: 3px solid var(--secondarycolor);
+    text-decoration: none;
+    color: var(--secondarycolor);
+
+}
+
+.footer {
+    padding: 30px 20px;
+    text-align: center;
+    background-color: var(--section-background);
+    color: #fff;
+
+}
+
+/* end contact us  */
